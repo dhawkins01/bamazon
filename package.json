@@ -1,0 +1,25 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "Command line mock inventory management application.",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhawkins01/bamazon.git"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "mysql",
+    "npm"
+  ],
+  "author": "Dave Hawkins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhawkins01/bamazon/issues"
+  },
+  "homepage": "https://github.com/dhawkins01/bamazon#readme"
+}
