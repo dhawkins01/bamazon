@@ -18,7 +18,7 @@ The program will then check that there is enough items available, and then displ
 reflect the items sold. If not enough are available, the user will get a message saying "not enough inventory" and then be prompted to pick another item. 
 
 # Demonstration
-// video demonstration goes here
+[![bamazon demonstration](http://img.youtube.com/vi/ovj1-QO0G10/0.jpg)](http://www.youtube.com/watch?v=ovj1-QO0G10 "Bamazon Demonstration")
 
 # Links
 Check out this project on [GitHub](https://github.com/dhawkins01/bamazon)
