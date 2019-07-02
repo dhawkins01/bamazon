@@ -46,7 +46,7 @@ connection.connect(function (err) {
                     break;
                 case "View low inventory":
                     console.log("test: low inventory");
-                    displayMenu();
+                    lowInventory();
                     break;
                 case "Add stock to current inventory":
                     console.log("test: add stock");
@@ -65,11 +65,27 @@ connection.connect(function (err) {
   } // end of displayMenu()
 
   function viewProducts() {
-    connection.query("SELECT * FROM products", function (err, res) {
+    connection.query("SELECT * FROM products", function(err, res) {
         if (err) throw err;
         console.table(res);
         displayMenu();
       });
+  } // end of viewProducts()
+
+  function lowInventory() {
+      
+      // query the database to find all items with low stock
+      connection.query("SELECT product_name, stock_quanity FROM products", function(err, res) {
+          if (err) throw err;
+          //console.log(res);
+          for (i = 0; i < res.length; i++) {
+              if (res[i].stock_quanity < 10) {
+                  console.log("Item : " + res[i].product_name + " | Stock Left: " + res[i].stock_quanity + "\n");
+              }
+          }
+          displayMenu();
+          
+      })
   }
 
 
