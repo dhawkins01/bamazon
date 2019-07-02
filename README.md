@@ -1,3 +1,5 @@
+![title](title.png)
+
 # bamazon
 Command line mock inventory management system
 
@@ -5,34 +7,29 @@ Command line mock inventory management system
 This application uses node and mySql as well as the inquirer NPM package to view items in a database, and make changes based on user input. 
 
 # Instruction
-The liri-node-app takes in four main parameters from the command line: 
-> node liri (command) (search term)
+The bamazon app is run with the following command line: 
+> node bamazonCustomer
 
-The four commands available are:
-* movie-this
-* spotify-this-song
-* concert-this
-* do-what-it-says
+When run, a table with the available items will be displayed, and then the user will be prompted with:
+* the item_id of the item that they want to purchase
+* the quanity of the item they would like to purchase
 
-Example: 
-> node liri movie-this forrest gump
-
-Output:
-![example-image](example.png)
+The program will then check that there is enough items available, and then display the total price of all items and then update the database to 
+reflect the items sold. If not enough are available, the user will get a message saying "not enough inventory" and then be prompted to pick another item. 
 
 # Demonstration
-[![IMAGE ALT TEXT HERE](video.png)](https://www.youtube.com/watch?v=nMo8jLZJB-0&t)
+// video demonstration goes here
 
 # Links
-Check out this project on [GitHub](https://github.com/dhawkins01/liri-node-app)
+Check out this project on [GitHub](https://github.com/dhawkins01/bamazon)
 
 # Technologies Used
 * JavaScript
 * Node.js
 * These NPM Packages
-  * Axios
-  * Node-Spotify-API
-  * Chalk 
+  * MySQL
+  * Inquirer
+  
 
 # About Me
 My name is Dave Hawkins and I am a fullstack web developer. More information about me can be found here:
